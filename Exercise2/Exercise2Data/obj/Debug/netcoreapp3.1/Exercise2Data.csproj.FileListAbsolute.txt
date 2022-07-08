@@ -1,5 +1,0 @@
-D:\.Net_Core_Exercises\Exercise2\Exercise2\Exercise2Data\obj\Debug\netcoreapp3.1\Exercise2Data.csproj.AssemblyReference.cache
-D:\.Net_Core_Exercises\Exercise2\Exercise2\Exercise2Data\obj\Debug\netcoreapp3.1\Exercise2Data.GeneratedMSBuildEditorConfig.editorconfig
-D:\.Net_Core_Exercises\Exercise2\Exercise2\Exercise2Data\obj\Debug\netcoreapp3.1\Exercise2Data.AssemblyInfoInputs.cache
-D:\.Net_Core_Exercises\Exercise2\Exercise2\Exercise2Data\obj\Debug\netcoreapp3.1\Exercise2Data.AssemblyInfo.cs
-D:\.Net_Core_Exercises\Exercise2\Exercise2\Exercise2Data\obj\Debug\netcoreapp3.1\Exercise2Data.csproj.CoreCompileInputs.cache

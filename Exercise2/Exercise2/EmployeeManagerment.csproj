@@ -19,11 +19,16 @@
     <Compile Remove="Migrations\20220707172240_EmployeeMigration.Designer.cs" />
     <Compile Remove="Migrations\20220707172753_EmployeeMigration.cs" />
     <Compile Remove="Migrations\20220707172753_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220708015056_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220708015056_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220708074127_EmployeeManagerment.cs" />
+    <Compile Remove="Migrations\20220708074127_EmployeeManagerment.Designer.cs" />
+    <Compile Remove="Migrations\20220708074728_EmployeeManagerment.cs" />
+    <Compile Remove="Migrations\20220708074728_EmployeeManagerment.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.26" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.26">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
