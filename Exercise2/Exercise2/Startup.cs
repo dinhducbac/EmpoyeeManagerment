@@ -1,3 +1,4 @@
+using EmployeeManagerment.Services;
 using Exercise2.EF;
 using Exercise2.Services;
 using Microsoft.AspNetCore.Builder;
@@ -32,9 +33,10 @@ namespace Exercise2
             );
             services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger Demo", Version = "v1" })
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger Employee Managerment", Version = "v1" })
             );
             services.AddTransient<IEmployeeService, EmployeeService>();
+            services.AddTransient<IPositionService, PositionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

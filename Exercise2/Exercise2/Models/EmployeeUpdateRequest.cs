@@ -1,7 +1,8 @@
-﻿namespace Exercise2.Models
+﻿namespace EmployeeManagerment.Models
 {
-    public class EmployeeCreateRequest
+    public class EmployeeUpdateRequest
     {
+
         public string Name { get; set; }
         public int PositionId { get; set; }
     }

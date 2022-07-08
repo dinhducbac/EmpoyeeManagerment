@@ -1,6 +1,5 @@
 ﻿using EmployeeManagerment.Models;
-using Exercise2.Models;
-using Exercise2.Services;
+using EmployeeManagerment.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -9,44 +8,49 @@ namespace EmployeeManagerment.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class PositionController : ControllerBase
     {
-        public readonly IEmployeeService EmployeeService;
-        public EmployeeController(IEmployeeService employeeService)
+        public readonly IPositionService PositionService;
+        public PositionController(IPositionService positionService)
         {
-            EmployeeService = employeeService;
+            PositionService = positionService;
         }
-
-        [HttpGet("{id}")]
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAll()
+        {
+            var result = await PositionService.GetAll();
+            return Ok(result.ResultObject);
+        }
+        [HttpGet("id")]
         public async Task<IActionResult> GetById(int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            var result = await EmployeeService.GetEmployee(id);
-            if(result.ResultObject != null)
+            var result = await PositionService.GetPositionById(id);
+            if (result.ResultObject != null)
             {
                 return Ok(result.ResultObject);
             }
             return BadRequest(result);
         }
         [HttpPost("create")]
-        public async Task<IActionResult> Create(EmployeeCreateRequest request)
+        public async Task<IActionResult> Create(PositionCreateRequest request)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result = await EmployeeService.Create(request);
-            if(result.ResultObject != null)
+            var result = await PositionService.Create(request);
+            if (result.ResultObject != null)
                 return Ok(result);
             return BadRequest(result);
         }
         [HttpPut("{id}/update")]
-        public async Task<IActionResult> Update(int id, EmployeeUpdateRequest request)
+        public async Task<IActionResult> Update(int id, PositionUpdateRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result = await EmployeeService.Update(id, request);
+            var result = await PositionService.Update(id, request);
             if (result.ResultObject != null)
                 return Ok(result);
             return BadRequest(result);
@@ -56,16 +60,10 @@ namespace EmployeeManagerment.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result = await EmployeeService.Delete(id);
+            var result = await PositionService.Delete(id);
             if (result.Success == true)
                 return Ok(result);
             return BadRequest(result);
-        }
-        [HttpGet("all")]
-        public async Task<IActionResult> GetAll()
-        {
-            var result = await EmployeeService.GetAll();
-            return Ok(result.ResultObject);
         }
     }
 }
