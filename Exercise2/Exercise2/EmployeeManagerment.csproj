@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220707101806_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707101806_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707103949_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707103949_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707104043_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707104043_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707110530_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707110530_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707111152_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707111152_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707172240_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707172240_EmployeeMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220707172753_EmployeeMigration.cs" />
+    <Compile Remove="Migrations\20220707172753_EmployeeMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+</Project>

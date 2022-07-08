@@ -1,0 +1,13 @@
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\bin\Debug\netcoreapp3.1\Exsercise2Data.deps.json
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\bin\Debug\netcoreapp3.1\Exsercise2Data.dll
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\bin\Debug\netcoreapp3.1\Exsercise2Data.pdb
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.csproj.AssemblyReference.cache
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.AssemblyInfoInputs.cache
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.AssemblyInfo.cs
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.csproj.CoreCompileInputs.cache
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.dll
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.pdb
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\bin\Debug\netcoreapp3.1\Exsercise2Data.runtimeconfig.json
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\bin\Debug\netcoreapp3.1\Exsercise2Data.runtimeconfig.dev.json
+D:\.Net_Core_Exercises\Exercise2\Exercise2\Exsercise2Data\obj\Debug\netcoreapp3.1\Exsercise2Data.genruntimeconfig.cache
